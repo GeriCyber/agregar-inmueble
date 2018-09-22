@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+
+    <title>Crear Inmueble</title>
+</head>
+
+<body>
+	<div class="nav">
+		<div class="nav-header">
+			<div class="nav-title">
+			 	Gericyber
+			</div>
+		</div>
+		<div class="nav-btn">
+			<label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</div>
+		<input type="checkbox" id="nav-check">
+		<div class="nav-links">
+		<a href="#">Inicio</a>
+		<a href="#" class="active">Agregar Propiedad</a>
+		<a href="#">Gestionar Propiedades</a>
+		</div>
+	</div>
+
+	<div class="container-full">
+		<h1 class="title"><img src="home.svg" width="30">&nbsp;Agregar Propiedad</h1>
+		<div class="divide"><hr></div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<br>
+		<form>
+			<div class="form-box">
+				<div class="formulario">
+					<!--Email-->
+					<div class="etiqueta"><label for="titulo">Titulo </label></div>
+					<input type="text" name="titulo" id="titulo" placeholder=" Ej. KardashiandLand" required>
+				</div>
+				
+				<div class="formulario">
+					<!--Password-->
+					<div class="etiqueta"><label for="descripcion">Descripción </label></div>
+					<textarea rows="4" name="descripcion" id="descipcion" placeholder="Ej: 2 pisos, 3 cuartos" required></textarea>
+				</div>
+				
+				<div class="formulario">
+					<!--Password-->
+					<div class="etiqueta"><label for="precio">Precio </label></div>
+					<input type="text" name="precio" id="precio" placeholder="Precio de venta o alquiler" required>
+				</div>
+
+				<div class="formulario">
+					<label for="ubicacion">Ubicación </label>
+					<select id="ubicacion">
+						<option value="ven">El Trigal</option>
+						<option value="usa">Mañongo</option>
+						<option value="col">La Isabelica</option>
+						<option value="ch">Las Quintas</option>
+						<option value="esp">Vivienda Rural</option>
+					</select>
+					<div id="est-prop-desktop">
+						<label for="estado-prop"">&nbsp;&nbsp;Estado de Propiedad</label>
+						<select id="estado-prop">
+							<option value="ven">En Venta</option>
+							<option value="usa">En Alquiler</option>
+							<option value="col">Vendida</option>
+							<option value="ch">Alquilada</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="formulario" id="est-prop-mobile">
+					<label for="estado-prop"">&nbsp;&nbsp;Estado de Propiedad</label>
+					<select id="estado-prop">
+						<option value="ven">En Venta</option>
+						<option value="usa">en Alquiler</option>
+						<option value="col">Vendida</option>
+						<option value="ch">Alquilada</option>
+					</select>
+				</div>	
+				
+				<div class="formulario">
+					<button type="submit" name="submit" id="botonEnviar">Agregar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

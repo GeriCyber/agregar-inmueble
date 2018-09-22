@@ -1,0 +1,243 @@
+body 
+{
+    -webkit-background-blend-mode: overlay;
+    -moz-background-blend-mode: overlay;
+    background-blend-mode: overlay;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+.nav 
+{
+  height: 60px;
+  width: 100%;
+  background-color: #222;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.nav > .nav-header 
+{
+  display: inline;
+}
+.nav > .nav-header > .nav-title 
+{
+  display: inline-block;
+  font-size: 22px;
+  color: #efefef;
+  padding: 16px 10px 20px 10px;
+}
+.nav > .nav-btn 
+{
+  display: none;
+}
+.nav > .nav-links 
+{
+  display: inline;
+  float: right;
+  font-size: 16px;
+}
+.nav > .nav-links > a 
+{
+  display: inline-block;
+  padding: 20px 15px 20px 15px;
+  text-decoration: none;
+  color: #efefef;
+}
+.nav > .nav-links > a:hover, 
+.active
+{
+  background-color: #17A2B8;
+}
+.nav > #nav-check 
+{
+  display: none;
+}
+.container-full
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 40px;
+    height: 105vh;
+    padding-bottom: 50px;
+}
+.form-box
+{
+    text-align: center;
+}
+.title
+{
+    color: #222;
+    letter-spacing: 2px;
+}
+hr
+{
+    border: 1px solid #17A2B8;
+    margin-left: 40px;
+}
+.divide
+{
+    width: 100px;
+    padding-bottom: 5px;
+}
+input, textarea
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    height: 40px;
+    padding: 5px 5px 12px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 535px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+     transition: 0.5s;
+     outline: none;
+     background-color: #f1f1f1;
+}
+textarea
+{
+    height: 100px;
+}
+input:focus, 
+textarea:focus, 
+select:focus 
+{
+    border: 2px solid #17A2B8;
+}
+select
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+label
+{
+    top: 5px;
+    width: 200px;
+    float: top;
+    font-weight: 500;
+    color: #222;
+}
+p
+{
+    color: #222;
+}
+.formulario
+{
+    margin-bottom: 10px;
+}
+#botonEnviar
+{
+    background-color: #17A2B8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 535px;
+    padding: 10px 0;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 500;
+    font-size: 16px;
+}
+#botonEnviar:hover
+{
+    background-color: #128698;
+}
+#est-prop-mobile
+{
+    display: none;
+}
+#est-prop-desktop
+{
+    display: inline;
+}
+/*-----------------Media Queries-------------*/
+@media only screen and (max-width: 575.99px) 
+{
+    .container-full
+    {
+        padding: 20px 50px !important;
+        height: 130vh;
+    }
+    input,
+    textarea
+    {
+        width: 280px;
+    }
+    #botonEnviar
+    {
+        width: 140px;
+    }
+    #navbar li
+    {
+        float: none;
+        text-align: left;
+    }
+    .menu
+    {
+        padding-bottom: 40px;
+    }
+    #est-prop-desktop
+    {
+        display: none;
+    }
+    #est-prop-mobile
+    {
+        display: block;
+    }
+    .nav > .nav-btn 
+    {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label 
+    {
+        display: inline-block;
+        width: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label > span 
+    {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links 
+    {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #222;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a 
+    {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) + .nav-links 
+    {
+        height: 0px;
+    }
+    .nav > #nav-check:checked + .nav-links 
+    {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
